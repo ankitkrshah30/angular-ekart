@@ -1,0 +1,14 @@
+/* custom-offer-styles.css */
+.alert-custom-offer {
+    background-color: #f7a627; /* Your specific orange */
+    color: #ffffff; /* White text */
+    border-color: #e6911c; /* A slightly darker border */
+}
+
+.alert-custom-offer .alert-link {
+    color: #ffffff; /* Ensure link text is white */
+}
+
+.alert-custom-offer .alert-link:hover {
+    color: #e0e0e0; /* Lighter white on hover */
+}

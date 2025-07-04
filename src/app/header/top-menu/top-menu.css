@@ -1,0 +1,52 @@
+/* Custom CSS for Top Menu Bar */
+.top-menu-bar {
+    font-size: 0.85rem; /* Slightly smaller font for top bar */
+    border-bottom: 1px solid #e9ecef; /* Subtle border at the bottom */
+}
+
+.top-menu-bar .nav-link {
+    color: #495057; /* A slightly softer dark grey for links */
+    transition: color 0.2s ease-in-out;
+    display: flex; /* Use flex for icon and text alignment */
+    align-items: center; /* Vertically align icon and text */
+}
+
+.top-menu-bar .nav-link:hover {
+    color: #007bff; /* Bootstrap primary blue on hover, or your brand color */
+    text-decoration: none; /* Remove underline on hover if not desired */
+}
+
+/* Optional: Adjust spacing for icons if needed */
+.top-menu-bar .nav-link i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .top-menu-bar .container {
+        justify-content: center; /* Center the menu items on smaller screens */
+        padding: 5px 15px; /* Adjust padding */
+    }
+
+    .top-menu-bar .top-menu-links {
+        flex-wrap: wrap; /* Allow items to wrap to next line */
+        justify-content: center; /* Center items when wrapped */
+    }
+
+    .top-menu-bar .nav-item {
+        margin-right: 10px !important; /* Adjust spacing */
+        margin-left: 10px !important; /* Adjust spacing */
+        margin-bottom: 5px; /* Add bottom margin if wrapping */
+    }
+}
+
+@media (max-width: 480px) {
+    .top-menu-bar {
+        font-size: 0.8rem;
+    }
+
+    .top-menu-bar .nav-item {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+}

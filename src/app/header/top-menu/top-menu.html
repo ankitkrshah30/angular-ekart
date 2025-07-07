@@ -1,24 +1,9 @@
 <div class="top-menu-bar bg-light text-dark py-1">
     <div class="container d-flex justify-content-end align-items-center">
         <ul class="list-unstyled d-flex align-items-center mb-0 top-menu-links">
-            <li class="nav-item me-3">
-                <a class="nav-link p-0" href="#">
-                    <i class="bi bi-question-circle-fill me-1"></i> Help
-                </a>
-            </li>
-            <li class="nav-item me-3">
-                <a class="nav-link p-0" href="#">
-                    <i class="bi bi-arrow-repeat me-1"></i> Exchange & Return
-                </a>
-            </li>
-            <li class="nav-item me-3">
-                <a class="nav-link p-0" href="#">
-                    <i class="bi bi-person-fill me-1"></i> Signup / Login
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link p-0" href="#">
-                    <i class="bi bi-truck me-1"></i> Order Tracker
+            <li class="nav-item me-3" *ngFor="let item of topMenuItems">
+                <a class="nav-link p-0" [href]="item.link">
+                    <i [class]="item.icon + ' me-1'"></i> {{ item.label }}
                 </a>
             </li>
         </ul>

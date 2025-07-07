@@ -20,26 +20,6 @@
     color: #007bff; /* Hover and active color */
 }
 
-/* Search bar styling */
-.navbar .form-control {
-    border-radius: 0.25rem; /* Standard Bootstrap border-radius */
-    border-color: #ced4da;
-}
-
-.navbar .form-control:focus {
-    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Bootstrap focus shadow */
-    border-color: #80bdff;
-}
-
-.navbar .btn-outline-primary {
-    border-color: #007bff;
-    color: #007bff;
-}
-
-.navbar .btn-outline-primary:hover {
-    background-color: #007bff;
-    color: #fff;
-}
 
 /* Media query for smaller screens: Center search bar on mobile */
 @media (max-width: 991.98px) { /* Bootstrap's 'lg' breakpoint */
@@ -56,14 +36,5 @@
         margin: 5px 0; /* Add vertical spacing for mobile nav items */
     }
 
-    .navbar .form-control,
-    .navbar .btn-outline-primary {
-        width: 100%; /* Full width for search input and button */
-        margin-bottom: 5px; /* Spacing between search input and button */
-    }
-
-    .navbar .ms-auto {
-        margin-left: 0 !important; /* Remove left margin for search bar */
-        margin-right: 0 !important; /* Remove right margin for search bar */
-    }
+    
 }

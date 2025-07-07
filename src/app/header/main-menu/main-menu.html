@@ -7,23 +7,11 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto"> <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+            <ul class="navbar-nav mx-auto"> 
+                <li class="nav-item" *ngFor="let item of mainMenuItems">
+                    <a class="nav-link" [routerLink]="item.link">{{ item.label }}</a>
                 </li>
             </ul>
-
-            <form class="d-flex ms-auto" role="search"> <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
-            </form>
         </div>
     </div>
 </nav>

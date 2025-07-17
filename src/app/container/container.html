@@ -1,14 +1,2 @@
-<div class="search-wrapper mx-auto mb-3 mt-3">
-  <form class="d-flex search-form" role="search">
-    <!--<input class="form-control me-2" type="search" placeholder="Search products..." name="search" aria-label="Search" [value]="searchTerm" (input) ="updateSearchTerm($event)">-->
-    <input class="form-control me-2" type="search" placeholder="Search products..." name="search" aria-label="Search" [(ngModel)]="searchTerm">
-    <button class="btn btn-outline-primary" type="submit">Search</button>
-  </form>
-</div>
-
-<div class="search-title text-center mb-4" *ngIf="searchTerm!=''">
-  <h5>Search Results for: <span class="text-primary">{{ searchTerm }}</span></h5>
-</div>
-
+<app-search></app-search>
 <app-product-list></app-product-list>
-<p>container works!</p>

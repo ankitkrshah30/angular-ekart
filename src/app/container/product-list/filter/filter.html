@@ -1,0 +1,69 @@
+<!-- Filter Button -->
+<div class="d-flex justify-content-end mb-3">
+  <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#filterModal">
+    <i class="bi bi-funnel"></i> Filter
+  </button>
+</div>
+
+<!-- Filter Modal -->
+<div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="filterModalLabel">Filter Options</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <!-- Category Filter -->
+          <div class="mb-3">
+            <label class="form-label">Category</label>
+            <!--<select class="form-select" [(ngModel)]="selectedFilterButtonCategory" name="filterCategory"
+             (change)="onFilterCategoryChange()">-->
+            <select class="form-select" [(ngModel)]="selectedFilterButtonCategory" name="filterCategory">
+              <option value="All">{{'All('+all+')'}}</option>
+              <option value="Guys Watch">{{'Guys Watch('+guysWatch+')'}}</option>
+              <option value="Girls Watch">{{'Girls Watch('+girlsWatch+')'}}</option>
+              <option value="Unisex Watch">{{'Unisex Watch('+unisexWatch+')'}}</option>
+            </select>
+          </div>
+
+          <!-- Price Range -->
+          <div class="mb-3">
+            <label class="form-label">Price Range</label>
+            <input type="range" class="form-range" min="0" max="5000" step="100">
+            <div class="d-flex justify-content-between">
+              <span>₹0</span>
+              <span>₹5000+</span>
+            </div>
+          </div>
+
+          <!-- Ratings -->
+          <div class="mb-3">
+            <label class="form-label">Ratings</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rating4">
+              <label class="form-check-label" for="rating4">4★ & above</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rating3">
+              <label class="form-check-label" for="rating3">3★ & above</label>
+            </div>
+          </div>
+
+          <!-- In Stock -->
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="inStock">
+            <label class="form-check-label" for="inStock">Only show in-stock items</label>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="applyFilters()" data-bs-dismiss="modal">Apply Filters</button>
+      </div>
+    </div>
+  </div>
+</div>

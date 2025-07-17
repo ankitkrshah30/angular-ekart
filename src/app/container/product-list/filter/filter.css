@@ -1,0 +1,8 @@
+/* Optional: Customize filter modal styles */
+.modal-title {
+  font-weight: 600;
+}
+
+.form-label {
+  font-size: 0.9rem;
+}

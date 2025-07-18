@@ -11,4 +11,10 @@ import { Search } from './search/search';
   styleUrls: ['./container.css']
 })
 export class Container {
+
+  searchTerm: string = '';
+
+  onSearchChange(searchText: string) {
+    this.searchTerm = searchText;
+  }
 }

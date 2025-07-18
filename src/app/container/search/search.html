@@ -1,7 +1,7 @@
 <div class="search-wrapper mx-auto mb-3 mt-3">
   <form class="d-flex search-form" role="search">
     <!--<input class="form-control me-2" type="search" placeholder="Search products..." name="search" aria-label="Search" [value]="searchTerm" (input) ="updateSearchTerm($event)">-->
-    <input class="form-control me-2" type="search" placeholder="Search products..." name="search" aria-label="Search" [(ngModel)]="searchTerm">
+    <input class="form-control me-2" type="search" placeholder="Search products..." name="search" aria-label="Search" [(ngModel)]="searchTerm" (input)="onSearchChange()">
     <button [ngClass]="{'btn':true,'btn-outline-primary':searchTerm}" type="submit" [disabled]="!searchTerm">Search</button>
   </form>
 </div>

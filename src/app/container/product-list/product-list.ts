@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Product } from './product/product';
 import { Filter } from './filter/filter';
@@ -346,6 +346,330 @@ export class ProductList {
     colors: "+9 Colors",
     rating: 4.9,
     inStock: true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/a2286c9748ed4980846f040cb8d642d5_9366/future-icons-badge-of-sport-pants.jpg",
+    "productUrl": "https://www.adidas.co.in/future-icons-badge-of-sport-pants/IV5725.html",
+    "category": "Sportswear",
+    "percentDiscount": "-50%",
+    "mrp": "₹5,599.00",
+    "discountedPrice": "₹2,799.50",
+    "productName": "Future Icons Badge of Sport Pants",
+    "colors": "1 Color",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b98a4b84e5a14602aadd7f545eb415a7_9366/adidas-z.n.e.-pants.jpg",
+    "productUrl": "https://www.adidas.co.in/adidas-z.n.e.-pants/IN5097.html",
+    "category": "Sportswear",
+    "percentDiscount": "-50%",
+    "mrp": "₹6,299.00",
+    "discountedPrice": "₹3,149.50",
+    "productName": "adidas Z.N.E. Pants",
+    "colors": "1 Color",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/27d2a35a33824186bb89af1f00ea41b1_9366/tiro-23-club-training-top.jpg",
+    "productUrl": "https://www.adidas.co.in/tiro-23-club-training-top/HS3617.html",
+    "category": "Football",
+    "percentDiscount": "-60%",
+    "mrp": "₹3,299.00",
+    "discountedPrice": "₹1,320.00",
+    "productName": "Tiro 23 Club Training Top",
+    "colors": "1 Color",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/a3953851ea3d4d9fb0e44c36c9d4985c_9366/adidas-z.n.e.-tee.jpg",
+    "productUrl": "https://www.adidas.co.in/adidas-z.n.e.-tee/IQ3533.html",
+    "category": "Sportswear",
+    "percentDiscount": "-50%",
+    "mrp": "₹4,599.00",
+    "discountedPrice": "₹2,299.50",
+    "productName": "adidas Z.N.E. Tee",
+    "colors": "1 Color",
+    "rating": 5.0,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/588c10f34f5e4603ad0087c74a33f3d2_9366/premiere-crewneck-sweater.jpg",
+    "productUrl": "https://www.adidas.co.in/premiere-crewneck-sweater/IK9101.html",
+    "category": "Skateboarding",
+    "percentDiscount": "-50%",
+    "mrp": "₹6,999.00",
+    "discountedPrice": "₹3,499.50",
+    "productName": "Premiere Crewneck Sweater",
+    "colors": "1 Color",
+    "rating": null,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/8861623e865d407298bb28c3d5e79bd7_9366/runmagica-m.jpg",
+    "productUrl": "https://www.adidas.co.in/runmagica-m/JJ6502.html",
+    "category": "Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹4,299.00",
+    "discountedPrice": "₹2,149.50",
+    "productName": "Runmagica M",
+    "colors": "2 Colors",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/14ef9ace63544a0a966a6d7394c433b5_9366/arsenal-24-25-home-jersey.jpg",
+    "productUrl": "https://www.adidas.co.in/arsenal-24-25-home-jersey/IT6141.html",
+    "category": "Football",
+    "percentDiscount": "-50%",
+    "mrp": "₹5,999.00",
+    "discountedPrice": "₹2,999.00",
+    "productName": "Arsenal 24/25 Home Jersey",
+    "colors": "1 Color",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/429f87465753431fbef7809768c279ad_9366/adicolor-teamgeist-cropped-track-top.jpg",
+    "productUrl": "https://www.adidas.co.in/adicolor-teamgeist-cropped-track-top/JD0265.html",
+    "category": "Originals",
+    "percentDiscount": "-50%",
+    "mrp": "₹5,999.00",
+    "discountedPrice": "₹2,999.50",
+    "productName": "Adicolor Teamgeist Cropped Track Top",
+    "colors": "1 Color",
+    "rating": null,
+    "inStock": false
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d0bd384ccc3a422da72fdcbfd6b2cae6_9366/arsenal-24-25-third-jersey.jpg",
+    "productUrl": "https://www.adidas.co.in/arsenal-24-25-third-jersey/IS3629.html",
+    "category": "Football",
+    "percentDiscount": "-50%",
+    "mrp": "₹5,999.00",
+    "discountedPrice": "₹2,999.00",
+    "productName": "Arsenal 24/25 Third Jersey",
+    "colors": "1 Color",
+    "rating": 5.0,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/e2bbf123c7fa4f0089fd33c84e0abcde_9366/mistico-m.jpg",
+    "productUrl": "https://www.adidas.co.in/mistico-m/JJ5240.html",
+    "category": "Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹1,599.00",
+    "discountedPrice": "₹799.50",
+    "productName": "Mistico M",
+    "colors": "+2 Colors",
+    "rating": 4.0,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/9072ad57594142629ef32c0ee3d42e35_9366/cloudfoam-move-sock-shoes.jpg",
+    "productUrl": "https://www.adidas.co.in/cloudfoam-move-sock-shoes/ID6520.html",
+    "category": "Sportswear",
+    "percentDiscount": null,
+    "mrp": "₹5,999.00",
+    "discountedPrice": "₹2,999.50",
+    "productName": "Cloudfoam Move Sock Shoes",
+    "colors": "2 Colors",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/9833aa9262dc4407a83eb82a3b25e40b_9366/grand-court-2.0-shoes.jpg",
+    "productUrl": "https://www.adidas.co.in/grand-court-2.0-shoes/GW9195.html",
+    "category": "Sportswear",
+    "percentDiscount": null,
+    "mrp": "₹7,999.00",
+    "discountedPrice": "₹3,999.50",
+    "productName": "Grand Court 2.0 Shoes",
+    "colors": "1 Color",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/dab145d75dbf4e47baf0edc57164da5f_9366/adicolor-jacket-kids.jpg",
+    "productUrl": "https://www.adidas.co.in/adicolor-jacket-kids/IY4812.html",
+    "category": "Kids - Originals",
+    "percentDiscount": "-50%",
+    "mrp": "₹6,999.00",
+    "discountedPrice": "₹3,499.50",
+    "productName": "Adicolor Jacket (Kids)",
+    "colors": "1 Color",
+    "rating": 5.0,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/44ca521e12564eff8e9a9b2db6dc0aaf_9366/premium-essentials-maxi-dress.jpg",
+    "productUrl": "https://www.adidas.co.in/premium-essentials-maxi-dress/JC7869.html",
+    "category": "Women - Sportswear",
+    "percentDiscount": "-50%",
+    "mrp": "₹5,999.00",
+    "discountedPrice": "₹2,999.50",
+    "productName": "Premium Essentials Maxi Dress",
+    "colors": "1 Color",
+    "rating": null,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/a6aa2b42bf3340668c6ae57bf1de736e_9366/train-essentials-training-polo-shirt.jpg",
+    "productUrl": "https://www.adidas.co.in/train-essentials-training-polo-shirt/IB8105.html",
+    "category": "Men - Training",
+    "percentDiscount": "-50%",
+    "mrp": "₹2,999.00",
+    "discountedPrice": "₹1,499.50",
+    "productName": "Train Essentials Training Polo Shirt",
+    "colors": "2 Colors",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/eba0eccd552e492fbcde8a107c7d77ff_9366/ultimashow-2.0-shoes.jpg",
+    "productUrl": "https://www.adidas.co.in/ultimashow-2.0-shoes/IE8909.html",
+    "category": "Men - Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹5,999.00",
+    "discountedPrice": "₹2,999.50",
+    "productName": "Ultimashow 2.0 Shoes",
+    "colors": "2 Colors",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/120b677ab34e4231baea3bf56f83ea64_9366/cloudfoam-walk-lounger-shoes.jpg",
+    "productUrl": "https://www.adidas.co.in/cloudfoam-walk-lounger-shoes/ID4054.html",
+    "category": "Men - Sportswear",
+    "percentDiscount": "-50%",
+    "mrp": "₹6,999.00",
+    "discountedPrice": "₹3,499.50",
+    "productName": "Cloudfoam Walk Lounger Shoes",
+    "colors": "2 Colors",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/2aa420650b174c7a83049c2d8d1bb95f_9366/city-rnr-shoes.jpg",
+    "productUrl": "https://www.adidas.co.in/city-rnr-shoes/JI0836.html",
+    "category": "Men - Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹9,999.00",
+    "discountedPrice": "₹4,999.50",
+    "productName": "City RNR Shoes",
+    "colors": "3 Colors",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/299ce0135efd4e3e83d051449c65c955_9366/cmfortz-1.0-m.jpg",
+    "productUrl": "https://www.adidas.co.in/cmfortz-1.0-m/JJ5256.html",
+    "category": "Men - Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹5,599.00",
+    "discountedPrice": "₹2,799.50",
+    "productName": "CMFORTZ 1.0 M",
+    "colors": "1 Color",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/8d850458e6294fde9700460e6d3cc0f0_9366/smphny.jpg",
+    "productUrl": "https://www.adidas.co.in/smphny-m/JJ5310.html",
+    "category": "Men - Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹4,999.00",
+    "discountedPrice": "₹2,499.50",
+    "productName": "SMPHNY M",
+    "colors": "2 Colors",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/129e46f2192f40fc999a40ff9737890d_9366/zenith-m.jpg",
+    "productUrl": "https://www.adidas.co.in/zenith-m/JJ5300.html",
+    "category": "Men - Running",
+    "percentDiscount": "-55%",
+    "mrp": "₹1,999.00",
+    "discountedPrice": "₹899.00",
+    "productName": "Zenith M",
+    "colors": "2 Colors",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/59fa3fa591f848a09b9ec62f292174be_9366/aztecx-sneaker.jpg",
+    "productUrl": "https://www.adidas.co.in/aztecx-sneaker/IU6965.html",
+    "category": "Men - Sportswear",
+    "percentDiscount": "-50%",
+    "mrp": "₹4,599.00",
+    "discountedPrice": "₹2,299.50",
+    "productName": "Aztecx Sneaker",
+    "colors": "1 Color",
+    "rating": 3.4,
+    "inStock": false
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/f4653aa109124d10b526932526050bce_9366/base-switch-m.jpg",
+    "productUrl": "https://www.adidas.co.in/base-switch-m/JK0970.html",
+    "category": "Men - Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹3,999.00",
+    "discountedPrice": "₹1,999.50",
+    "productName": "Base Switch M",
+    "colors": "2 Colors",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d890d7aa03ee48e8a740edbe7086c492_9366/cyberrun-m.jpg",
+    "productUrl": "https://www.adidas.co.in/cyberrun-m/JJ6511.html",
+    "category": "Men - Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹4,299.00",
+    "discountedPrice": "₹2,149.50",
+    "productName": "Cyberrun M",
+    "colors": "2 Colors",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/2ad5de4ce54a4e3e8ba350832c3a93f6_9366/jaysaw-reflective-m.jpg",
+    "productUrl": "https://www.adidas.co.in/jaysaw-reflective-m/JJ6506.html",
+    "category": "Men - Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹4,299.00",
+    "discountedPrice": "₹2,149.50",
+    "productName": "Jaysaw Reflective M",
+    "colors": "2 Colors",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/122445a74f4c4cb997e7cc1f233abb85_9366/glowrun-reflective-m.jpg",
+    "productUrl": "https://www.adidas.co.in/glowrun-reflective-m/JJ6490.html",
+    "category": "Men - Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹4,599.00",
+    "discountedPrice": "₹2,299.50",
+    "productName": "Glowrun Reflective M",
+    "colors": "2 Colors",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "imageUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b83c150240c345578e5990739b0ed710_9366/basic-run-wave.jpg",
+    "productUrl": "https://www.adidas.co.in/basic-run-wave/JK0840.html",
+    "category": "Men - Running",
+    "percentDiscount": "-50%",
+    "mrp": "₹3,799.00",
+    "discountedPrice": "₹1,899.50",
+    "productName": "Basic Run Wave",
+    "colors": "1 Color",
+    "rating": 3.9,
+    "inStock": true
   }
 ];
 
@@ -364,9 +688,19 @@ export class ProductList {
   }
 
   getFilteredProducts() {
-    if (this.selectedCategory === 'All') {
-      return this.products;
+    let filteredProduct=this.products;
+    if (!(this.selectedCategory === 'All')) {
+      filteredProduct=filteredProduct.filter(p=>p.category===this.selectedCategory);
     }
-    return this.products.filter(product => product.category === this.selectedCategory);
+    if(this.searchTerm&&this.searchTerm.trim()!==''){
+      const searchText = this.searchTerm.toLowerCase();
+      filteredProduct=filteredProduct.filter(p=>p.productName.toLowerCase().includes(searchText)
+        ||p.category.toLowerCase().includes(searchText));
+
+    }
+    return filteredProduct;
   }
+
+  @Input()
+  searchTerm: string = '';
 }

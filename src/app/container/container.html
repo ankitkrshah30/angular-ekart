@@ -1,2 +1,2 @@
-<app-search></app-search>
-<app-product-list></app-product-list>
+<app-search (SearchChange)="onSearchChange($event)"></app-search>
+<app-product-list [searchTerm]="searchTerm"></app-product-list>

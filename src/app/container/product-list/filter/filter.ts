@@ -32,9 +32,9 @@ export class Filter {
 
   selectedFilterButtonCategory:string = 'All';
 
-  onFilterCategoryChange() {
+  /*onFilterCategoryChange() {
     this.selectedFilterCategory.emit(this.selectedFilterButtonCategory);
-  }
+  }*/
 
   applyFilters() {
     this.selectedFilterCategory.emit(this.selectedFilterButtonCategory);

@@ -1,0 +1,54 @@
+<!-- product-detail.component.html -->
+<!-- Modal Backdrop -->
+<div class="modal-backdrop show" *ngIf="productList.selectedProduct" (click)="onClose()"></div>
+
+<!-- Modal Box -->
+<div class="modal-box modal-dialog-centered shadow-lg rounded-4" *ngIf="productList.selectedProduct">
+  <button class="close-btn btn btn-light border-0 rounded-circle position-absolute top-0 end-0 m-3 fs-3"
+          (click)="onClose()" aria-label="Close">&times;</button>
+  <div class="modal-content d-flex flex-column flex-md-row align-items-center gap-4 p-4">
+    <!-- Product Image & Badges -->
+    <div class="modal-image-wrap position-relative text-center mb-3 mb-md-0">
+      <img [src]="productList.selectedProduct.imageUrl"
+           alt="{{productList.selectedProduct.productName}}"
+           class="modal-image img-fluid rounded-3 shadow-sm" style="width:180px; height:180px; object-fit:contain;">
+      <!-- Discount badge -->
+      <span *ngIf="productList.selectedProduct.percentDiscount"
+            class="badge bg-danger position-absolute top-0 start-0 m-2 fs-6">
+        {{productList.selectedProduct.percentDiscount}}
+      </span>
+      <!-- Stock badge -->
+      <span class="badge position-absolute start-0 bottom-0 m-2 px-3"
+            [ngClass]="productList.selectedProduct.inStock ? 'bg-success' : 'bg-secondary'">
+        {{ productList.selectedProduct.inStock ? 'In Stock' : 'Out of Stock' }}
+      </span>
+    </div>
+    <!-- Product Details -->
+    <div class="modal-details flex-grow-1">
+      <h2 class="product-title mb-1 fw-bold">{{productList.selectedProduct.productName}}</h2>
+      <div class="mb-2">
+        <span class="badge bg-info text-dark me-2">{{productList.selectedProduct.category}}</span>
+        <span class="color-label small text-secondary" *ngIf="productList.selectedProduct.colors">
+          {{productList.selectedProduct.colors}}
+        </span>
+      </div>
+      <hr>
+      <!-- Price -->
+      <div class="price-box mb-2">
+        <span class="discounted text-success fw-bold fs-5">{{productList.selectedProduct.discountedPrice}}</span>
+        <span class="mrp text-muted text-decoration-line-through ms-2">{{productList.selectedProduct.mrp}}</span>
+        <span class="percent badge bg-warning text-dark ms-2">{{productList.selectedProduct.percentDiscount}}</span>
+      </div>
+      <!-- Rating (text only, no Math) -->
+      <div class="rating-box mb-2">
+        <span class="rating-text fs-5">⭐ {{productList.selectedProduct.rating}} / 5</span>
+      </div>
+      <hr>
+      <!-- Action -->
+      <a [href]="productList.selectedProduct.productUrl" target="_blank"
+         class="btn btn-primary rounded-pill px-4 fw-semibold mt-2">
+        View / Buy <i class="bi bi-box-arrow-up-right"></i>
+      </a>
+    </div>
+  </div>
+</div>

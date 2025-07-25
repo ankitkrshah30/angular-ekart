@@ -1,2 +1,3 @@
 <app-search (SearchChange)="onSearchChange($event)"></app-search>
-<app-product-list [searchTerm]="searchTerm"></app-product-list>
+<app-product-list [searchTerm]="searchTerm" #productList></app-product-list>
+<app-product-detail *ngIf="productList.selectedProduct" [productList]="productList"></app-product-detail>

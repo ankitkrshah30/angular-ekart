@@ -2,6 +2,7 @@ import { Component,Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Product } from './product/product';
 import { Filter } from './filter/filter';
+import { Products } from '../../Models/Products';
 
 @Component({
   selector: 'app-product-list',
@@ -10,6 +11,9 @@ import { Filter } from './filter/filter';
   styleUrls: ['./product-list.css']
 })
 export class ProductList {
+
+  selectedProduct: Products = null;
+
   products = [
   {
     imageUrl: "https://www.fastrack.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwa6345be8/images/Fastrack/Catalog/3247QM02_1.jpg?sw=360&sh=360",

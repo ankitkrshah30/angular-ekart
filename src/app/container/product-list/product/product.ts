@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Products } from '../../../Models/Products';
 
 @Component({
   selector: 'app-product',
@@ -11,18 +12,7 @@ import { CommonModule } from '@angular/common';
 export class Product {
   
   @Input()
-  product:{
-    imageUrl: string,
-    productUrl: string,
-    category: string,
-    percentDiscount: string,
-    mrp: string,
-    discountedPrice: string,
-    productName: string,
-    colors: string,
-    rating: number,
-    inStock: boolean
-  };
+  product: Products;
 
   getCategoryColor(category: string): string {
   switch (category) {
